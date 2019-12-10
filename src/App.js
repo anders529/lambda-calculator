@@ -8,13 +8,18 @@ import Operators from './components/ButtonComponents/OperatorButtons/Operators';
 
 function App() {
   const [numbDisplay, setNumbDisplay] = useState(0);
+
+    const clickHandler = (btnPressed) => {
+      setNumbDisplay(btnPressed);
+    }
+
   return (
     <div className="container">
       <Logo />
       <div className="App">
-          <Display />
+          <Display numD = {numbDisplay}/>
           <Specials />
-          <Numbers />  
+          <Numbers rock = {clickHandler}/>  
           <Operators />
       </div>
     </div>

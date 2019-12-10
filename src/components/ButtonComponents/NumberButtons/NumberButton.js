@@ -4,8 +4,9 @@ import {numbers} from '../../../data';
 const NumberButton = (props) => {
   return (
       <button onClick = {( ) => (
-        console.log("button is clicked!")
-        
+
+        props.snakeD(props.numberInfo)
+
       )} >{props.numberInfo}</button>
   );
 };
