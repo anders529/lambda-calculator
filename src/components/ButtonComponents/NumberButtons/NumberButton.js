@@ -2,14 +2,9 @@ import React from "react";
 import {numbers, operators, specials} from '../../../data';
 
 const NumberButton = (props) => {
-  const {numbrz, setNumDisplay} = props;
-
   return (
     <div>
-      <button onClick={() => {
-        setNumbDisplay(numbrz);
-      }
-     } >{numbrz}</button>
+      <button>{props.nmbrz}</button>
     </div>
   );
 };
