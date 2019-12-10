@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {operators} from '../../../data';
 import OperatorButton from './OperatorButton'
 
@@ -10,7 +10,7 @@ const [opers] = useState(operators);
           <OperatorButton key = {index}
           operBtn={p2} />
       ))
-      };
+      }
     </div>
   );
 };

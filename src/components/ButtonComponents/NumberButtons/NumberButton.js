@@ -1,11 +1,12 @@
 import React from "react";
-import {numbers, operators, specials} from '../../../data';
+import {numbers} from '../../../data';
 
 const NumberButton = (props) => {
   return (
-    <div>
-      <button>{props.nmbrz}</button>
-    </div>
+      <button onClick = {( ) => (
+        console.log("button is clicked!")
+        
+      )} >{props.numberInfo}</button>
   );
 };
 export default NumberButton;
