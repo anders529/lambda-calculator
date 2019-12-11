@@ -6,9 +6,9 @@ const Operators = () => {
 const [opers] = useState(operators);
   return (
     <div>
-      {opers.map((p2, index) => (
-          <OperatorButton key = {index}
-          operBtn={p2} />
+      {
+      opers.map((p2, index) => (
+          <OperatorButton key = {index} operBtn={p2}/>
       ))
       }
     </div>

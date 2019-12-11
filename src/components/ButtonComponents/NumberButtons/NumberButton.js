@@ -3,7 +3,7 @@ import {numbers} from '../../../data';
 
 const NumberButton = (props) => {
   return (
-      <button onClick = {( ) => (
+      <button className="styleBtn" onClick = {( ) => (
 
         props.snakeD(props.numberInfo)
 

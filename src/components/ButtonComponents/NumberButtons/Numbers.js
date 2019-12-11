@@ -3,8 +3,7 @@ import {numbers} from '../../../data';
 import NumberButton from './NumberButton';
 
 const Numbers = (props) => {
-  const [numState, setNumState] = useState(numbers);
-  console.log(props.rock);
+  const [numState] = useState(numbers);
   return (
     <div>
      {
